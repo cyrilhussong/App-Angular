@@ -4,13 +4,21 @@ body {
   font-family: 'Comfortaa', sans-serif;
   background-color: #F9D0A3;
   color: #333;
+  text-align: center;
 }
 
 h1, h2 {
   font-family: 'Bubbleboddy neue', cursive;
   color: #DA001E;
+  text-align: center;
 }
 
 a {
   color: #DA001E;
+  
 }
+li {
+  list-style-type: none;
+ 
+}
+
