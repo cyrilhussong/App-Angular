@@ -6,34 +6,37 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   template: `
-    <nav class="navbar">
-      <a routerLink="/" routerLinkActive="active" class="logo">Au Petit Village</a>
-      <a routerLink="/" routerLinkActive="active">Accueil</a>
-      <a routerLink="/about" routerLinkActive="active">À propos</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    </nav>
+    <header class="header">
+      <a routerLink="/" class="logo" aria-label="Accueil">
+        <img src="assets/logo.png" alt="Logo Au Petit Village" />
+      </a>
+      <nav class="nav-menu">
+        <a routerLink="/">Accueil</a>
+        <a routerLink="/about">À propos</a>
+        <a routerLink="/contact">Contact</a>
+      </nav>
+    </header>
   `,
   styles: [`
-    .navbar {
-      background-color: #FDD90B;
-      padding: 1rem;
+    .header {
       display: flex;
-      gap: 1.5rem;
       align-items: center;
-      font-family: 'Comfortaa', sans-serif;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #151217;
     }
-    a {
+    .logo img {
+      height: 50px;
+    }
+    .nav-menu a {
+      color: #FDD90B;
+      margin-left: 1.5rem;
       text-decoration: none;
-      color: #DA001E;
+      font-family: 'Bubbleboddy neue', cursive;
       font-weight: bold;
     }
-    a.logo {
-      font-family: 'Bubbleboddy neue', cursive;
-      font-size: 1.5rem;
-      flex-grow: 1;
-    }
-    a.active {
-      text-decoration: underline;
+    .nav-menu a:hover {
+      color: #DA001E;
     }
   `]
 })
