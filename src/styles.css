@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #F9D0A3;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Bubbleboddy neue', cursive;
+  color: #DA001E;
+}
+
+a {
+  color: #DA001E;
+}
