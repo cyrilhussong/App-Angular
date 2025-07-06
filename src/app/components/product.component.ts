@@ -20,18 +20,25 @@ import { ProductsService } from '../services/products.service';
   `,
   styles: [`
     h2 {
-      font-family: 'Bubbleboddy neue', cursive;
-      color: #DA001E;
-    }
-    .product-image {
-      max-width: 300px;
-      display: block;
-      margin: 1rem 0;
-    }
-    p {
-      font-family: 'Comfortaa', sans-serif;
-      color: #333;
-    }
+  font-family: 'Bubbleboddy neue', cursive;
+  color: #DA001E;
+}
+
+.product-container {
+  text-align: center; /* Centrer tout le contenu */
+}
+
+.product-image {
+  max-width: 300px;
+  display: block;
+  margin: 1rem auto; /* Centrage horizontal */
+}
+
+p {
+  font-family: 'Comfortaa', sans-serif;
+  color: #333;
+}
+
   `]
 })
 export class ProductComponent {
